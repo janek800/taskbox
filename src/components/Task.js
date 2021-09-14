@@ -19,7 +19,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
           value={title} 
           readOnly={true} 
           placeholder="Input title"
-          style={{ background: 'red'}} 
+          style={{ textOverflow: 'ellipsis' }}
         />
       </div>
 
@@ -50,3 +50,5 @@ Task.propTypes = {
   /** Event to change the task to pinned */
   onPinTask: PropTypes.func,
 };
+
+//test
